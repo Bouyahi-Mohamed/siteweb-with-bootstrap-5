@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- // Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -12,141 +14,102 @@
 
     <title>training bootstrap</title>
 
+    <!-- // Bootstrap JS Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <!-- // Font Awesome for icons -->
+    <script
+      src="https://kit.fontawesome.com/e810b54dde.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- // Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- // Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
 
+  <body class="">
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container">
+        <!-- start logo section -->
+        <a class="navbar-brand" href="#">
+          <img
+            src="../images/logo.png"
+            alt="Logo"
+            width="70"
+            height="40"
+            class="d-inline-block align-text-top"
+          />
+        </a>
+        <!-- end logo section -->
 
+        <!-- responsive toggler -->
+        <button
+          class="navbar-toggler text-white border border-white border-2 shadow-none p-2"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars fa-lg text-white box-shadow-none"></i>
+        </button>
+        <!-- responsive toggler end -->
 
-
-  <body class="bg-primary" style="height: 100vh">
-    <!-- root container-fluid -->
-    <div class="container-fluid">
-      <!-- nav bar -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid justify-content-around">
-          <a class="navbar-brand text-primary col-md-2 ms-5" href="#">
-            <img
-              src="https://universitesesame.com/wp-content/uploads/2023/06/Logo-Sesame-193x80-1.png"
-              alt=""
-              width="120"
-              height="70"
-              class="d-inline-block align-text-center mg-2"
-
-            />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdownLicences"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  licences
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownLicences">
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      Licence en Informatique et Multimédia
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      Licence en Management
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdownIngenieur"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Ingenieur
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownIngenieur">
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      1ᵉʳ Cycle Préparatoire Intégré
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      2ᵉ Cycle Ingénieur en Informatique
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      2ᵉ Cycle Ingénieur en Informatique en Temps Aménagé
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdownMasters"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Masters Professionnels
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMasters">
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      Master Supply Chain Management
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      Master Transformation Digitale et ERP Management
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      Master Marketing Digital et Data Analytics
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
-                  Formation à la Demande
-                </a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <button class="btn btn-outline-success me-4" type="submit">inscription</button>
-            </form>
+        <!-- nav bar links -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active p-2 p-lg-3" href="#" aria-current="page"
+                ><i class="fas fa-home pe-2 p-lg-1"></i>
+                <span class="d-none d-lg-inline "> </span>Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="#"
+                ><i class="fas fa-cogs pe-2 p-lg-1"></i
+                ><span class="d-none d-lg-inline "> </span>Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="#"
+                ><i class="fas fa-briefcase pe-2 p-lg-1"></i
+                ><span class="d-none d-lg-inline "> </span>Portfolio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="#"
+                ><i class="fas fa-info-circle pe-2 p-lg-1"></i
+                ><span class="d-none d-lg-inline "> </span>About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="#"
+                ><i class="fas fa-envelope pe-2 p-lg-1"></i
+                ><span class="d-none d-lg-inline "> </span>Contact</a
+              >
+            </li>
+          </ul>
+          <!-- start search icon -->
+          <div class="search p-lg-3 border-start">
+            <i class="fa-solid fa-magnifying-glass fa-lg text-white d-none d-lg-block"></i>
           </div>
+          <!-- end search icon -->
+          <a href="#" class="btn mainbtn rounded-pill px-4 px-lg-3 py-1 py-lg-2  ">Login</a>
         </div>
-      </nav>
-      <!-- nav bar end -->
-    </div>
-    <!-- root container-fluid end -->
+        <!-- nav bar links end -->
+      </div>
+      
+    </nav>
+    <!-- nav bar end -->
   </body>
 </html>
