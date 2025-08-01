@@ -48,7 +48,7 @@ body {
 
 .mainbtn {
   background-color: var(--red-color);
-  color: var(--yellow-color);
+  color: white !important;
   font-weight: 500;
   font-size: 16px;
   padding: 10px 20px;
@@ -60,3 +60,10 @@ body {
   transform: scale(1.05);
 }
 /* end navbar */
+
+/* start section */
+.landing-page{
+  background-color: var(--dark-color);
+  min-height: calc(100vh - 56px);
+}
+
