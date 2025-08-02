@@ -67,3 +67,44 @@ body {
   min-height: calc(100vh - 56px);
 }
 
+/* start session Features */
+.mainTitle::after {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 2px;
+  background-color: var(--green-color);
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+      /* start items feature */
+      .row .iconesHolder {
+        height: 200px;
+      }
+
+      .features .iconesHolder i {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .features .iconesHolder .number {
+        font-size: 12rem;
+        color: var(--section-color);
+        font-weight: 700;
+      }
+      .features .iconesHolder .icon {
+        color: var(--green-color);
+        font-weight: 700;
+        bottom: -20px;
+      }
+      .features .title-features{
+        color: var(--yellow-color);
+        font-weight: 400;
+        font-size: 2rem;
+      }
+      /* end items feature */
+
+    
+/* end session Features */
