@@ -108,3 +108,37 @@ body {
 
     
 /* end session Features */
+/* start session ourWork */
+.ourWork {
+  background-color: var(--section-color);
+  padding: 50px 0;
+}
+
+/* start navbar2 */
+.navbar2 {
+  background-color: var(--section-color);
+  padding: 20px 0;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.navbar2 .nav-link {
+  color: var(--dark-color) !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  padding: 10px 15px !important;
+}
+.navbar2 .nav-link:hover {
+  color: var(--red-color) !important;
+  text-decoration: none !important;
+  outline: none !important;
+}
+.navbar2 .nav-link.active {
+  color: var(--yellow-color) !important;
+  font-weight: bold !important;
+  text-decoration: none !important;
+  outline: none !important;
+  background-color: var(--red-color);
+}
+
+
+/* end session ourWork */
