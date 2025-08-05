@@ -162,3 +162,11 @@ body {
   color: white;
   text-align: center;
 }
+/* end team member */
+
+/* start project section */
+.project {
+  background: var(--dark-color);
+  color: white;
+  text-align: center;
+}
