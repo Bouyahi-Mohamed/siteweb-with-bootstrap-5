@@ -170,3 +170,44 @@ body {
   color: white;
   text-align: center;
 }
+
+
+/* start footer */
+.footer {
+  background: var(--dark-color);
+  color: white;
+  padding: 20px 0;
+} 
+.footer .incBy{
+  color: var(--green-color);
+}
+.footer .inc{
+  color: orange;
+}
+.footer .icon .facebook {
+  background-color: #1877f2;
+  width: 40px;
+  height: 40px;
+}
+.footer .icon .twitter {
+  background-color: #1da1f2;
+  width: 40px;
+  height: 40px;
+}
+
+.footer .icon .instagram {
+  background-color: #cd201f;
+  width: 40px;
+  height: 40px;
+}
+.footer .icon .linkedin {
+  background-color: rgb(4, 24, 247);
+  width: 40px;
+  height: 40px;
+}
+.footer .icon .youtube {
+  background-color: #ff0000;
+  width: 40px;
+  height: 40px;
+}
+/* end footer */
